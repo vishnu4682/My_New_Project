@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="parent">
+        <div class="one">
+            <h2>Calculator</h2>
+            <div class="num1"><span>Num1</span>
+                <input type="number" [(ngModel)]="num1">
+            </div><br>
+            <div class="num2">
+                <span>Num2</span>
+                <input type="number" [(ngModel)]="num2">
+            </div>
+           
+        </div>
+        <div class="two">
+            <button class="button" (click)="sum()" [disabled]="!num1 || !num2">sum</button>
+            <button class="button" (click)="div()" [disabled]="!num1 || !num2">div</button>
+            <button class="button" (click)="mul()" [disabled]="!num1 || !num2">mul </button>
+            <button class="button" (click)="sub()" [disabled]="!num1 || !num2">sub</button>
+            
+        </div>
+        <div class="three">
+            <label>Result:{{result}}</label>
+        </div>
+        
+    </div>
+</div>

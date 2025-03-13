@@ -1,0 +1,23 @@
+
+    
+
+.BMI{
+    width: 40%;
+    height: 80%;
+    background-color: rgb(135, 16, 111);
+    
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+label{
+    margin-left: 100px;
+}
+button{
+    margin-left: 200px;
+}
+.result{
+    margin-bottom: 200px;
+}
