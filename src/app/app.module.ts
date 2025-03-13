@@ -13,6 +13,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { BmiComponent } from './bmi/bmi.component';
 import { SimpleInterestComponent } from './simple-interest/simple-interest.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SimpleInterestComponent } from './simple-interest/simple-interest.compo
     HomeComponent,
     DataBindingComponent,
     BmiComponent,
-    SimpleInterestComponent
+    SimpleInterestComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

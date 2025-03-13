@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { SimpleInterestComponent } from './simple-interest/simple-interest.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -19,7 +20,8 @@ const routes: Routes = [
     {path: 'Home', component:HomeComponent},
     {path: 'Data-Binding',component:DataBindingComponent},
     {path: 'BMI',component:BmiComponent},
-    {path: "simple-interest",component:SimpleInterestComponent}
+    {path: "simple-interest",component:SimpleInterestComponent},
+    {path: "Directives",component:DirectivesComponent}
     
   ]},
   
