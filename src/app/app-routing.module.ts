@@ -10,6 +10,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { SimpleInterestComponent } from './simple-interest/simple-interest.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -21,7 +24,10 @@ const routes: Routes = [
     {path: 'Data-Binding',component:DataBindingComponent},
     {path: 'BMI',component:BmiComponent},
     {path: "simple-interest",component:SimpleInterestComponent},
-    {path: "Directives",component:DirectivesComponent}
+    {path: "Directives",component:DirectivesComponent},
+    {path: "employee",component:EmployeeComponent},
+    {path: "flipkart",component:FlipkartComponent},
+    {path: "vehicle",component:VehicleComponent}
     
   ]},
   

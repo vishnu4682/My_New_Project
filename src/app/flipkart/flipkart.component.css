@@ -1,0 +1,111 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+           /* ........................top_container................................. */
+.top_container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+    background-color: cadetblue;
+}
+            /* .......................middle_container................................... */
+.middle_container{
+    width: 100%;
+    height: 30%;
+    background-color: cadetblue;
+    display: flex;
+}
+.middle_container_left{
+    width: 60%;
+    height: 100%;
+    background-color: cadetblue;
+}
+.middle_container_left1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.middle_container_left2{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yellow_button{
+    background-color: yellow;
+    border: 0;
+    border-radius: 5px;
+}
+.middle_container_left3{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.aqua_buttons{
+    background-color: aqua;
+    border: 0;
+    border-radius: 5px;
+}
+.middle_container_left4{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.grey_button{
+    background-color: grey;
+    border: 0;
+    border-radius: 5px;
+}
+.middle_container_middle{
+    width: 5%;
+    height: 100%;    
+}
+.middle_container_right{
+    width: 35%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    color: white;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.green_button{
+    background-color: greenyellow;
+    border: 0;
+    border-radius: 5px;
+}
+           /* .......................bottom_container...................................... */
+.bottom_container{
+    width: 100%;
+    height: 70%;
+    background-color: brown;
+}
+.table_space{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    text-align: center;
+}
+.delete_button{
+    background-color: red;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
+.head_color{
+    background-color: green;
+    color: white;    
+}
+
