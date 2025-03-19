@@ -18,6 +18,9 @@ import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import{HttpClientModule} from "@angular/common/http";
+import { AccountsComponent } from './accounts/accounts.component';
+import { FlipkartApiComponent } from './flipkart-api/flipkart-api.component';
+
 
 
 @NgModule({
@@ -36,6 +39,8 @@ import{HttpClientModule} from "@angular/common/http";
     EmployeeComponent,
     FlipkartComponent,
     VehicleComponent,
+    AccountsComponent,
+    FlipkartApiComponent,
     
   ],
   imports: [

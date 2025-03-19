@@ -1,0 +1,65 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-evenly;
+   
+   
+    
+}
+.container{
+    width: 22%;
+    height: 40%;
+    background-color: rgb(151, 116, 116);
+    border-radius: 10px;   
+    box-shadow: 0 0 5px 0; 
+    margin: 10px;
+    
+     
+}
+.top{
+    width: 100%;
+    height: 60%;
+    /* background-color: brown;     */
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.bottom{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(143, 80, 80); */
+    font-size: small;
+}
+.bottom1{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.bottom2{
+    width: 100%;
+    height: 25%;
+    /* background-color: burlywood; */
+    color: red;   
+}
+.bottom3{
+    width: 100%;
+    height: 35%;
+    /* background-color: brown; */    
+}
+/* .bottom4{
+    width: 100%;
+    height: 15%;
+} */
+img{
+    width: 100%;
+    height: 40%;
+}
+
+

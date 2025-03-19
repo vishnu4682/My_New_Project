@@ -13,6 +13,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { FlipkartApiComponent } from './flipkart-api/flipkart-api.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -27,7 +29,9 @@ const routes: Routes = [
     {path: "Directives",component:DirectivesComponent},
     {path: "employee",component:EmployeeComponent},
     {path: "flipkart",component:FlipkartComponent},
-    {path: "vehicle",component:VehicleComponent}
+    {path: "vehicle",component:VehicleComponent},
+    {path: "accounts",component:AccountsComponent},
+    {path: "flipkart-api",component:FlipkartApiComponent}
     
   ]},
   
