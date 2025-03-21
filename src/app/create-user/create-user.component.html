@@ -1,0 +1,39 @@
+<p>create-user works!</p>
+
+<form [formGroup]="userForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Password:</label>
+    <input type="text" formControlName="password"><br>
+    <label>Mobile:</label>
+    <input type="number" formControlName="mobile"><br>
+
+
+    <div formGroupName="address">
+        <label>City:</label>
+        <input type="text" formControlName="city"><br>
+        <label>State:</label>
+        <input type="text" formControlName="state"><br>
+        <label>Pincode:</label>
+        <input type="number" formControlName="pincode"><br>
+    </div>
+    <label>Type:</label>
+    <input type="radio" name="type" formControlName="type" value="dayScholar"> 
+    <label>Day Scholar</label>
+    <input type="radio" name="type" formControlName="type" value="residential"> 
+    <label>Residential</label><br>
+
+    <div *ngIf="userForm.get('type')?.value=='dayScholar'">
+        <label>Bus Fee:</label>
+        <input type="number" formControlName="busFee"><br>
+    </div>
+
+    <div *ngIf="userForm.get('type')?.value=='residential'">
+        <label>Hostel Fee:</label>
+        <input type="number" formControlName="hostelFee"><br>
+    </div>
+
+    <button (click)="submit()">Submit</button>
+</form>

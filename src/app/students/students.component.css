@@ -1,0 +1,31 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+}
+.container{
+    width: 45%;
+    height: 50%;
+    /* background-color: black; */
+}
+.top{
+    width: 100%;
+    height: 20%;
+    background-color: azure;
+}
+.middle{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(142, 109, 61);
+}
+.bottom{
+    width: 100%;
+    height: 20%;
+    background-color: cadetblue;
+}

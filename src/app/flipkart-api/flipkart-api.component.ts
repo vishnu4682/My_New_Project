@@ -7,12 +7,12 @@ import { FlipkartApiService } from '../flipkart-api.service';
   styleUrls: ['./flipkart-api.component.css']
 })
 export class FlipkartApiComponent {
-  vishnu: any=[];
+  flipkartdata: any=[];
    constructor(private _flipkartapiservice:FlipkartApiService){
     _flipkartapiservice.getFlipkart().subscribe(
       (data:any)=>{
         console.log(data);
-        this.vishnu=data;
+        this.flipkartdata=data;
       },(err:any)=>{
         alert("internal server error")
       }

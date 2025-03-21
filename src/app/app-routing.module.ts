@@ -15,6 +15,11 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartApiComponent } from './flipkart-api/flipkart-api.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentsComponent } from './students/students.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -31,7 +36,11 @@ const routes: Routes = [
     {path: "flipkart",component:FlipkartComponent},
     {path: "vehicle",component:VehicleComponent},
     {path: "accounts",component:AccountsComponent},
-    {path: "flipkart-api",component:FlipkartApiComponent}
+    {path: "flipkart-api",component:FlipkartApiComponent},
+    {path: "create-vehicle",component:CreateVehicleComponent},  
+    {path: "create-account",component:CreateAccountComponent}, 
+    {path: "student",component:StudentsComponent}, 
+    {path: "create-user",component:CreateUserComponent}
     
   ]},
   
