@@ -17,6 +17,18 @@ export class StudentsComponent {
         alert("Internal server Error")
       }
     )
-  }
+  
+     }
+    //  filter(){
+    //   this._studentService.getFilteredStudents(this.term).subscribe(
+    //         (data:any)=>{
+    //       console.log(data);
+    //       this.studentdata=data;
+    //     },(err:any)=>{
+    //       alert("Internal server Error");
+    //     }
+    //   )
+    // }
+    
 
 }

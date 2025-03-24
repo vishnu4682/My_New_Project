@@ -1,9 +1,45 @@
+<!-- <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="search"> -->
+
 <div class="parent">
     <div class="container" *ngFor="let studentData1 of studentdata">
         <div class="top">
-            <!-- <img class="logo" src="{{studentData1.school_logo}}" alt=""> -->
+            <div class="top_left">
+             <img class="logo" src="{{studentData1.school_logo}}" alt="">   
+            </div>
+            <div class="top_right">
+                <b class="school_name">{{studentData1.school_name}}</b><br>
+                <span style="font-size: x-small;">{{studentData1.school_city}},</span>
+                <span style="font-size: x-small;">School-Pin:{{studentData1.school_pin}}</span>
+            </div>
+            
         </div>
-        <div class="middle"></div>
-        <div class="bottom"></div>
+        <div class="middle">
+            <div class="middle_left">
+                <div class="details">
+                <span><b>Name:</b></span>
+                <i>{{studentData1.name}}</i><br>
+                <span><b>Phone:</b></span>
+                <i>{{studentData1.phone}}</i><br>
+                <span><b>City:</b></span>
+                <i>{{studentData1.city}}</i><br>
+                <span><b>DOB:</b></span>
+                <i>{{studentData1.dob}}</i><br>
+                <span><b>Email:</b></span>
+                <i>{{studentData1.email}}</i><br>
+                <span><b>School_city:</b></span>
+                <i>{{studentData1.school_city}}</i><br>
+                <span><b>ID:</b></span>
+                <i>{{studentData1.id}}</i>
+                </div>
+            </div>
+            <div class="middle_right">
+                <img src="{{studentData1.profile_picture}}">
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="btn btn-primary">View</button>
+            <button class="btn btn-info">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
     </div>
 </div>
