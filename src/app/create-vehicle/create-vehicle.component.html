@@ -1,11 +1,24 @@
-<form [formGroup]="vehicleForm">
-    <label>Vehicle Name</label>
-    <input type="text" formControlName="Vehicle"><br>
-    <label>Color</label>
-    <input type="text" formControlName="color"><br>
-    <label>Cost</label>
-    <input type="number"cost formControlName="cost"><br>
-    <label>Fuel</label>
-    <input type="text" formControlName="fuel"><br>
-    <button (click)="create()">Create</button>
-</form>
+
+<div class="parent">
+    <div class="container">
+        <div class="header">
+            <h1 *ngIf="!id">Create Vehicle</h1>
+            <h1 *ngIf="id">Update Vehicle</h1>
+        </div>
+        <div class="footer">
+            <form [formGroup]="vehicleForm">
+                <label>Vehicle Name</label>
+                <input type="text" formControlName="Vehicle"><br>
+                <label>Color</label>
+                <input type="text" formControlName="color"><br>
+                <label>Cost</label>
+                <input type="number"cost formControlName="cost"><br>
+                <label>Fuel</label>
+                <input type="text" formControlName="fuel"><br>
+                <button (click)="create()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

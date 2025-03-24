@@ -44,7 +44,8 @@ const routes: Routes = [
     {path: "student",component:StudentsComponent}, 
     {path: "create-user",component:CreateUserComponent},
     {path: "student-data",component:StudentDataComponent},
-    {path: "vehicle-details/:id",component:VehicleDetailsComponent}
+    {path: "vehicle-details/:id",component:VehicleDetailsComponent},
+    {path: "edit-vehicle/:id",component:CreateVehicleComponent}
     
   ]},
   
