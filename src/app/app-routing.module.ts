@@ -20,6 +20,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentsComponent } from './students/students.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDataComponent } from './student-data/student-data.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,8 @@ const routes: Routes = [
     {path: "create-account",component:CreateAccountComponent}, 
     {path: "student",component:StudentsComponent}, 
     {path: "create-user",component:CreateUserComponent},
-    {path: "student-data",component:StudentDataComponent}
+    {path: "student-data",component:StudentDataComponent},
+    {path: "vehicle-details/:id",component:VehicleDetailsComponent}
     
   ]},
   
