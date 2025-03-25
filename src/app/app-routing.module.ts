@@ -22,10 +22,13 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDataComponent } from './student-data/student-data.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { DammyComponent } from './dammy/dammy.component';
+import { LoginComponent } from './login/login.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path: "login",component:LoginComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard], children:[
     {path: 'Welcome', component:WelcomeComponent},
     {path: 'Calculator', component:CalculatorComponent},
     {path: 'Rectangle',component:RectangleComponent},
@@ -47,11 +50,8 @@ const routes: Routes = [
     {path: "student-data",component:StudentDataComponent},
     {path: "vehicle-details/:id",component:VehicleDetailsComponent},
     {path: "edit-vehicle/:id",component:CreateVehicleComponent},
-    {path: "dammy",component:DammyComponent}
-    
+    {path: "dammy",canActivate:[AuthenticationGuard],component:DammyComponent},  
   ]},
-  
-
 ];
 
 @NgModule({

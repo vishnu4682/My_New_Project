@@ -27,6 +27,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDataComponent } from './student-data/student-data.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { DammyComponent } from './dammy/dammy.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -56,6 +57,7 @@ import { DammyComponent } from './dammy/dammy.component';
     StudentDataComponent,
     VehicleDetailsComponent,
     DammyComponent,
+    LoginComponent,
     
     
   ],

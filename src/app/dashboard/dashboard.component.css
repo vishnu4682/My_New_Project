@@ -16,11 +16,11 @@
 .right{
     width: 80%;
     height: 100%;
-    background-color: rgb(104, 94, 113);
     overflow: auto;    
-    /* background-repeat: no-repeat; */
+    background-color: darkcyan;
 }
 hr{
     width: 100%;    
 }
+
  
