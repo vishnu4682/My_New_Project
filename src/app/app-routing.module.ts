@@ -21,6 +21,7 @@ import { StudentsComponent } from './students/students.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDataComponent } from './student-data/student-data.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { DammyComponent } from './dammy/dammy.component';
 
 
 const routes: Routes = [
@@ -45,7 +46,8 @@ const routes: Routes = [
     {path: "create-user",component:CreateUserComponent},
     {path: "student-data",component:StudentDataComponent},
     {path: "vehicle-details/:id",component:VehicleDetailsComponent},
-    {path: "edit-vehicle/:id",component:CreateVehicleComponent}
+    {path: "edit-vehicle/:id",component:CreateVehicleComponent},
+    {path: "dammy",component:DammyComponent}
     
   ]},
   
