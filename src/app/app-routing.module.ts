@@ -24,12 +24,14 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { DammyComponent } from './dammy/dammy.component';
 import { LoginComponent } from './login/login.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 const routes: Routes = [
   {path: "login",component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard], children:[
-    {path: 'Welcome', component:WelcomeComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard], children:[    
+    {path: "parent",component:ParentComponent},
     {path: 'Calculator', component:CalculatorComponent},
     {path: 'Rectangle',component:RectangleComponent},
     {path: 'Circle', component:CircleComponent},
@@ -50,7 +52,11 @@ const routes: Routes = [
     {path: "student-data",component:StudentDataComponent},
     {path: "vehicle-details/:id",component:VehicleDetailsComponent},
     {path: "edit-vehicle/:id",component:CreateVehicleComponent},
-    {path: "dammy",canActivate:[AuthenticationGuard],component:DammyComponent},  
+    {path: "dammy",canActivate:[AuthenticationGuard],component:DammyComponent},
+    {path: 'Welcome', component:WelcomeComponent},
+    {path: "sibling1",component:Sibling1Component},
+    
+    
   ]},
 ];
 

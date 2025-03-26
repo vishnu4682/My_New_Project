@@ -1,9 +1,13 @@
 <!-- <p>flipkart-api works!</p> -->
 
 <div class="parent" >
-    <div class="container" *ngFor="let vishnu1 of flipkartdata">
-        <div class="top">
-            <img class="img" src="{{vishnu1.image}} " alt="">         
+    <marquee behavior="" direction="rtl">Flipkart products</marquee>
+    <div class="container" *ngFor="let vishnu1 of flipkartdata">        
+        <div class="top">             
+            <img class="img" src="{{vishnu1.image}} "  alt="">
+            <div class="stars" >
+                <app-rating class="rating" [rating]="vishnu1.rating?.rate"></app-rating>
+            </div>        
         </div>
     <div class="bottom">          
         <div class="bottom1">
@@ -17,6 +21,8 @@
             
         </div>
         <div claaa="botton4">{{vishnu1.count}}</div>
+       
+        
     </div>
     </div>
     

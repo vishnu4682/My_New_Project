@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<app-child [a]="10"></app-child>
+<app-rating [rating]="4" [emoji]="4"></app-rating>  <!-- parent to child -->
+
+<app-child (childEvent)="capture($event)"></app-child>  <!-- child to parent -->
+ 

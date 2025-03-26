@@ -28,12 +28,18 @@ import { StudentDataComponent } from './student-data/student-data.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { DammyComponent } from './dammy/dammy.component';
 import { LoginComponent } from './login/login.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+
 
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [					
     AppComponent,
     DashboardComponent,
     WelcomeComponent,
@@ -58,9 +64,12 @@ import { LoginComponent } from './login/login.component';
     VehicleDetailsComponent,
     DammyComponent,
     LoginComponent,
-    
-    
-  ],
+    Sibling1Component,
+    Sibling2Component,
+      ParentComponent,
+      ChildComponent,
+      RatingComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

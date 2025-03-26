@@ -13,12 +13,13 @@
 }
 .container{
     width: 22%;
-    height: 40%;
+    height: 45%;
     background-color: rgb(151, 116, 116);
     border-radius: 10px;   
     box-shadow: 0 0 5px 0; 
     margin: 10px;
     padding-bottom: 15px;
+    
      
 }
 .top{
@@ -26,6 +27,8 @@
     height: 60%;
     /* background-color: brown;     */
 }
+
+
 .img{
     width: 100%;
     height: 100%;
@@ -61,7 +64,19 @@
 } */
 img{
     width: 100%;
-    height: 40%;
+    height: 40%;    
+}
+.stars{
+    background-color: black;
+    width: 45%;
+    height: 25%;  
+    color: yellow; 
+    text-align: start; 
+    position: relative;
+    bottom: 20px;
+}
+.rating{
+    width: 100%;
 }
 
 
