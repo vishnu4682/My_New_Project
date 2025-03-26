@@ -3,8 +3,6 @@
     height: 100%;
     background-color: aqua;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     gap: 10px;
     overflow: auto;
@@ -23,12 +21,10 @@
 .top_left{
     width: 35%;
     height: 100%;
-    /* background-color: blue; */
 }
 .top_right{
     width: 65%;
     height: 100%;
-    /* background-color: blue; */
 }
 .school_name{
     text-align: center;

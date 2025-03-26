@@ -1,7 +1,7 @@
 <!-- <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="search"> -->
 
 <div class="parent">
-    <div class="container" *ngFor="let studentData1 of studentdata">
+    <div class="container" *ngFor="let studentData1 of studentdata">    
         <div class="top">
             <div class="top_left">
              <img class="logo" src="{{studentData1.school_logo}}" alt="">   
@@ -39,7 +39,7 @@
         <div class="bottom">
             <button class="btn btn-primary">View</button>
             <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
+            <button class="btn btn-danger" (click)="delete(studentData1.id)">Delete</button>
         </div>
     </div>
 </div>
