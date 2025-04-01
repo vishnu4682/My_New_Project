@@ -1,6 +1,7 @@
 import { state } from '@angular/animations';
 import { Component } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { googleMail } from '../dashboard/validators';
 
 @Component({
   selector: 'app-create-user',
@@ -10,7 +11,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 export class CreateUserComponent {
   public userForm:FormGroup = new FormGroup({
     name:new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]),
-    email:new FormControl(),
+    email:new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(12),googleMail]),
     password:new FormControl(),
     mobile:new FormControl(),
     address:new FormGroup({

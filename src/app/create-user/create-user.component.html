@@ -14,6 +14,15 @@
     </div>
     <label>Email:</label>
     <input type="email" formControlName="email"><br><br>
+
+     <!-- This div is we used for custom validators  -->
+    <div *ngIf="userForm.get('email')?.touched && userForm.get('email')?.invalid">
+        <p *ngIf="userForm.get('email')?.errors?.['required']">email is Required</p>
+        <p *ngIf="userForm.get('email')?.errors?.['minlength']">email should be minimum 6 characters</p>
+        <p *ngIf="userForm.get('email')?.errors?.['maxlength']">email should be maximum 12 characters</p>
+        <p *ngIf="userForm.get('email')?.errors?.['GoogleMail']">Please eneter GoogleMail</p>
+    </div>
+    <!-- ............................................................. -->
     <label>Password:</label>
     <input type="text" formControlName="password"><br><br>
     <label>Mobile:</label>

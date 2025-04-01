@@ -12,7 +12,7 @@ export class VehicleComponent {
  constructor(private _vehicleService:VehicleService){
   this.loadVehicles();
  }
- loadVehicles(){
+ loadVehicles(){    // load vehicles is refresh the page after the delete                         
    this._vehicleService.getVehicles().subscribe(
       (data:any)=>{
         console.log(data);

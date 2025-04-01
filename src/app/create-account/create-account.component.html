@@ -2,7 +2,7 @@
 
 <form  [formGroup]="accountForm">
     <label>Account_Name:</label>
-    <input type="text" formControlName="account_name"><br>
+    <input type="text" formControlName="account_name" appCapital><br>
     <label>Account_Number:</label>
     <input type="number" formControlName="account_number"><br>
     <label>Available_Balance:</label>
@@ -11,5 +11,5 @@
     <input type="text" formControlName="city"><br>   
     <label>Ifsc_Code:</label>
     <input type="number" formControlName="ifsc_code"><br>
-    <button class="btn btn-info" (click)="create()">Create</button>
+    <button class="btn btn-info" (click)="create()">Create Account</button>
 </form>
