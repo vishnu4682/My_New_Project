@@ -26,6 +26,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { ParentComponent } from './parent/parent.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 
 const routes: Routes = [
@@ -55,6 +56,7 @@ const routes: Routes = [
     {path: "dammy",canActivate:[AuthenticationGuard],component:DammyComponent},
     {path: 'Welcome', component:WelcomeComponent},
     {path: "sibling1",component:Sibling1Component},
+    {path: "life-cycle",component:LifeCycleComponent},
     {
       path:'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
