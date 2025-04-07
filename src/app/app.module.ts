@@ -36,11 +36,7 @@ import { RatingComponent } from './rating/rating.component';
 import { CapitalDirective } from './capital.directive';
 import { BalancePipe } from './balance.pipe';
 import { TokenInterceptor } from './token.interceptor';
-
-
-
-
-
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [					
@@ -75,16 +71,18 @@ import { TokenInterceptor } from './token.interceptor';
       RatingComponent,
       CapitalDirective,
       BalancePipe,
-      
+          
    ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule 
-    
+    ReactiveFormsModule,
+    AboutUsModule     // Eager loading       
   ],
+
   providers: [
     {
       provide:HTTP_INTERCEPTORS,
@@ -92,6 +90,6 @@ import { TokenInterceptor } from './token.interceptor';
       multi:true
     }
   ],
-  bootstrap: [AppComponent]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
