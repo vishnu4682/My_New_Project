@@ -37,6 +37,8 @@ import { CapitalDirective } from './capital.directive';
 import { BalancePipe } from './balance.pipe';
 import { TokenInterceptor } from './token.interceptor';
 import { AboutUsModule } from './about-us/about-us.module';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { VendorComponent } from './vendor/vendor.component';
 
 @NgModule({
   declarations: [					
@@ -71,6 +73,8 @@ import { AboutUsModule } from './about-us/about-us.module';
       RatingComponent,
       CapitalDirective,
       BalancePipe,
+      LifeCycleComponent,
+      VendorComponent,
           
    ],
 
